@@ -8,6 +8,8 @@ sõnumis m sisalduva informatsiooni hulk:
 $$
 I(m) = log_a\left(\frac{1}{p(m)}\right) = -log_a p(m)
 $$
+
+
 Informatsiooni mõõtühikud:
 
 - a = 2: bitt, bait
