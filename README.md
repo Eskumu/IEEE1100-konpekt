@@ -499,11 +499,57 @@ Nullmodemi puhul on vookontroll ühendatud enda külge (sisuliselt ei kontrollit
 
 ### 33. Vigu parandavad koodid. Hamingi kaal ja kaugus, koodi kaugus ja kiirus.
 
+###### Hammingi kaal
+
+Koodsõna c Hammingi kaaluks w{c} nimetatakse tema  mittenulliste koordinaatide arvu.
+
+###### Hammingi kaugus
+
+Kahe koodsõna ci ja cj vaheliseks kauguseks nimetatakse nende koordinaatide arvu, milles nad üksteisest erinevad. h= d{ci,cj}=w{ci ⊕cj}
+
+###### Minimaalne kaugus
+
+Koodi __C__ minimaalseks kauguseks h<sub>min</sub> nimetakse kahe erineva koodsõna vähimat kaugust
+$$
+h_{min} = d\{c_i, c_j \}\space \space \space i \neq j
+$$
+
+
+##### Hammingi kood
+
+- Lineaarne binaarne plokk-kood minimaalse kaugusega h<sub>min</sub> = 3.
+- Iga täisarvu r ≥ 2 korral on ploki pikkus n= 2<sup>r</sup> -1, millest informatsiooni kannab k= 2<sup>r</sup>-r-1 bitti ja ülejäänud on paarsusbitid.
+- Suudab parandada ühekordseid bitivigu
+
+###### Koodi kiirus
+
+Informatsiooni edastavate bittide arvu k suhet kogu ploki pikusesse n:
+$$
+R = \frac{k}{n}
+$$
+
+
+Hammingu koodi kiirus:
+$$
+R = 1 - \frac{r}{2^r - 1}
+$$
 
 
 ### 34. Hammingi kood, Hamming (7,4). Genereeriv maatriks, sündroom.
 
+![1527602871085](assets/1527602871085.png)
 
+![1527602886188](assets/1527602886188.png)
+
+![1527602909125](assets/1527602909125.png)
+
+#### Paarsuskontrolli maatriks
+
+![1527602937678](assets/1527602937678.png)
+
+#### Hamming(7,4) lubatud koodsõnad
+
+![1527603069101](assets/1527603069101.png)
 
 ### 35. Vaheldamine (Interleaving), põhjused ja teostamine –plokkvaheldi (Block Interleaver).
 
