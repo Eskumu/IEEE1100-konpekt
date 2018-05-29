@@ -249,7 +249,7 @@ __ÜL 12__
 
 ![1527594243863](assets/1527594243863.png)
 
-Mõõdeatakse näiteks keskmist pinget.
+Mõõdetakse näiteks keskmist pinget.
 
 ### 20. Antenn ja selle parameetrid, antenni võimendus G ja ekvivalentne isotroopne kiirgusvõimsus EIRP.
 
@@ -333,46 +333,111 @@ kus
 
 ### 23. Fresneli tsoonid ja nende mõju, Fresneli tsooni laius.
 
+- Esimese Fresnelli tsooni raadius r<sub>1</sub> on leitav valemiga:
+
+  
+  $$
+  r_1 = \sqrt{\lambda\frac{d_1  · d_2}{d_1 + d_2}}
+  $$
+  
+
+
+
+- kus d<sub>1</sub> ja d<sub>2</sub> on vastavalt kaugused esimesest ja teisest antennist.
+
+- Vähemalt 60% Fresnelli tsoonist peaks olema takistuste vaba
+- Soovitatav on vähemalt 80% tsoonist.
+
 ### 24. Modulatsiooniviisid, digitaalne modulatsioon: ASK, FSK, PSK.  Moduleeritud signaali ajaline kuju ja spekter. Sagedustihendus FDM. Konstellatsioonidiagramm.
+
+ASK - amplituudmodulatsioon (muudetakse amplituudi)
+FSK - sagedusmodulatsioon (muudetakse signaali sagedust)
+PSK - faasmodulatsioon (muudetakse signaali faasi)
+
+TODO - sagedustihedus?
+
+#### Konstellatsioonidiagramm
+
+![1527597439562](assets/1527597439562.png)
 
 ### 25. Bitivigade tõenäosus BER, bitivigade sõltuvus signaal-müra suhtest SNR. Biti energia suhe valge müra võimsuse spektraaltihedusse, seotus signaal-müra suhtega.
 
+
+
 ### 26. Skrämbleri, tüübid, kasutamise põhjused, genereeriv polünoom.
+
+
 
 ### 27. Baitide järjekord edastamisel (endianness). MSB ja LSB, bittide järjekord edastamisel.
 
+
+
 ### 28. Veakontroll, kontrollsumma ja kontrollkood CRC.  CRC arvutamine ja kontrollimine, genereeriv polünoom. 
+
+
 
 ### 29. Kaadri alguse ja lõpu märkimine. Biti ja baidi täitmine, kontrolloktett.
 
+
+
 ### 30. Peidetud- ja avaliku sõlme probleemid raadiovõrgus.
+
+
 
 ### 31. Vookontroll, Stop-and Wait protokoll.
 
+
+
 ### 32. Andmeedastus ja vookontroll RS -232 liideses, nullmodem.
+
+
 
 ### 33. Vigu parandavad koodid. Hamingi kaal ja kaugus, koodi kaugus ja kiirus.
 
+
+
 ### 34. Hammingi kood, Hamming (7,4). Genereeriv maatriks, sündroom.
+
+
 
 ### 35. Vaheldamine (Interleaving), põhjused ja teostamine –plokkvaheldi (Block Interleaver).
 
+
+
 ### 36. Signaalide võrdlemine, rist-ja autokorrelatsioon. Koodtihendus CDMA.
+
+
 
 ### 37. Sagedushüplemine, sageduse otsene hajutamine. Teostamine ja kasutamine.
 
+
+
 ### 38. Pseudojuhuslikjada ja selle genereerimine, M-jada.
+
+
 
 ### 39. Ortogonaalne sagedustihendus OFDM. Tööpõhimõte ja kasutamine.
 
+
+
 ### 40. MIMO mõiste ja kasutamine.
+
+
 
 ### 41. Sageduste taaskasutus mobiilsidevõrgus.
 
+
+
 ### 42. Ressursijaotus mobiilsidevõrkudes: FDMA, TDMA.
+
+
 
 ### 43. Mobiilsidevõrgu ehitus ja peamised sõlmed.
 
+
+
 ### 44. GSM mobiilpositsioneerimine, TA parameeter.
+
+
 
 ### 45. Pinge ja vool elektriahelas, nende otsene ja kaudne mõõtmine. Oomi seadus.
