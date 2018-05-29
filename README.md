@@ -585,6 +585,7 @@ $$
   - ShseNOdänaiVmdaie
 
 - Kohalejõudev maatriks:
+
    ![1527610294989](assets/1527610294989.png)
 
 - Peale sümbolite õige järjekorra taastamist on veapurse jaotunud ühtlasemalt sõnumi peale laiali:
