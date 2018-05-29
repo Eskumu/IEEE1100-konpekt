@@ -362,35 +362,136 @@ TODO - sagedustihedus?
 
 ### 25. Bitivigade tõenäosus BER, bitivigade sõltuvus signaal-müra suhtest SNR. Biti energia suhe valge müra võimsuse spektraaltihedusse, seotus signaal-müra suhtega.
 
+#### BER
+
+Digitaalse andmeedastuse kvaliteeti iseloomustab bitivigade tõenäosus BER, mis on vigaselt vastuvõetud bittide n<sub>e</sub> arvu suhe kõikide edastatud bittide arvu n: 
+$$
+BER = \frac{n_e}{n}
+$$
+
+
+#### BER sõltuvus SNR suhtest.
+
+Bitivigade tõenäosus sõltub signaal-müra suhtest S/N vastuvõtjas.
+
+Digidaalsel edastusel kasutatakse S/N asemel tihtipeale biti energia E<sub>b</sub> [J] suhet valge müra võimsuse spektraaltihedusse η [W/Hz]. Viimane suurus on seotud signaal-müra suhtega spektraalefektiivsuse ρ [bitt/s/Hz] kaudu:
+
+
+$$
+\frac{S}{N} = \frac{E_b}{\eta} · \frac{1}{\rho}
+$$
+
+
 
 
 ### 26. Skrämbleri, tüübid, kasutamise põhjused, genereeriv polünoom.
+
+#### Skrämbler (scrambler)
+
+- Füüsilise kihi seade, mille ülesandeks on bittide järjekorra (pseudo) juhuslik ümberjärjestamise
+- Põhjused
+  - Vältimaks pikki ainult ühest sümbolist koosnevaid jadasi
+  - Lihtsustamaks vastuvõtjas kella sünkroniseerimist
+  - Tagab ülekantava signaali spektri kuju sõltumatuse edastatavast informatsioonist
+
+##### Aditiivne skrämbler (sünkroonne skrämbler)
+
+Edastatavale signaalile liidetakse (mooduliga kaks) pseudojuhuslik binaarne jada
+
+Tekitatakse tihti tagasisidestatud nikeregistriga. Pseudojuhuslik jada on täielikult määratud nihkeregistri algseisu ja genereeriva polünoomiga (tagasiside võtmise kohtadega): 1 + x<sup>-14</sup> + x<sup>-15</sup>
+
+Tagamaks algsete andmete korrektset taastamist peab deskrämbler töötama sünkroonselt, selleks lisatakse edastatavatele andmettele sünkrosõnad
+
+![1527599036153](assets/1527599036153.png)
+
+##### Multiplikatiivne skrämbler
+
+- Nimetatakse isesünkroniseeruvaks skrämbleriks
+
+- Korrutab sisendsignaali iseenda ülekandefunktsiooniga
+
+- Ei vaja sünkroniseerimist.
+
+- On määratud samuti polünoomiga. Algseis pole kriitiline, kuid vajab sünkroniseerivaid andmeid enne päris andmeid.
+
+- Kui deskrämbleri sisendkoodis on ühekordne viga, siis väljundis on vigade arv korrutatud tagasisideühenduste arvuga.
+
+  ![1527599425803](assets/1527599425803.png)
+
+![1527599496745](assets/1527599496745.png)
 
 
 
 ### 27. Baitide järjekord edastamisel (endianness). MSB ja LSB, bittide järjekord edastamisel.
 
-
+big-endian (edastatakse esmalt kõige suureb bit), little-endian (edastatakse esmalt kõige väiksem bit).
+MSB - most significant bit
+LSB - least significant bit
 
 ### 28. Veakontroll, kontrollsumma ja kontrollkood CRC.  CRC arvutamine ja kontrollimine, genereeriv polünoom. 
 
+##### Paarsuskontroll
 
+- Paketile lisatakse paarsusbitt, nii et väärtusega 1 bittide arv paketis koos paarsussbitiga oleks kas paaris või paaritu. Paarsuskontroll suudab tuvastada vaid paaritu arv vigu.
+
+  - paaris paarsuskontroll  - paaris arv ühtesi
+
+  ```
+  A tahab saata:           1001
+  A arvutab paarsusbiti:   1^0^0^1 = 0
+  A lisab paarsusbiti:     10010
+  B võtab vastu:           10010
+  B arvutab paarsuse:      1^0^0^1^0 = 0
+  B teatab õnnestunud ülekandest, kuna paarsuskontroll osutus õigeks.
+  ```
+
+
+
+  - paaritu paarsuskontroll - paaritu arv ühtesi
+
+    ```
+    A tahab saata:           1001
+    A arvutab paarsusbiti:   ~(1^0^0^1) = 1   
+    A lisab paarsusbiti:     10011
+    B võtab vastu:           10011
+    B arvutab paarsuse:      1^0^0^1^1 = 1
+    B teatab õnnestunud ülekandest, kuna paarsuskontroll osutus õigeks.
+    ```
+
+#### CRC (kontrollkood)
+
+
+CRC kontrollkoodi genereeriv polünoomi esimene sümbol on __alati 1__ (isegi kui ei ole mainitud)
+
+Näites on kasutusel
+
++ genereeriv polünoom 10011 ehk 0x3 ehk x<sup>1</sup> + x<sup>0</sup>. 
++ edastatavad andmebitid 1100101.
++ Saadetav signaal on 1100101 0010
+
+![1527600631940](assets/1527600631940.png)
 
 ### 29. Kaadri alguse ja lõpu märkimine. Biti ja baidi täitmine, kontrolloktett.
 
-
+- Kaadri algust ja lõppu tähistatakse spetsiifilise väljaga (flag): 0x7E
+- Kui kaadri sees oleks sama bitijärjestus loetaks see kaadri lõpuks
+- Lahenduseks on _bit stuffing_ - iga viie järjestikuse "1" järele listakse "0" (farssbitt)
+- Kui edastatakse andmeid baidi kaupa on mõislikum kasutada _byte stuffing´u nimelist tehnikat
+  - HDLC protokollis kasutatakse spetsiaalset sümbolit 0x7D (_control escape octet_), mis asetatakse iga kaadri sees oleva 0x7E või 0x7D okteti ette. Lisaks inverteeritakse vastava okteti viies bitt.
 
 ### 30. Peidetud- ja avaliku sõlme probleemid raadiovõrgus.
 
-
+TODO
 
 ### 31. Vookontroll, Stop-and Wait protokoll.
 
+#### Stop-and-wait
 
+![1527601457226](assets/1527601457226.png)
 
 ### 32. Andmeedastus ja vookontroll RS -232 liideses, nullmodem.
 
-
+Nullmodemi puhul on vookontroll ühendatud enda külge (sisuliselt ei kontrollita, kas saab edastada)
 
 ### 33. Vigu parandavad koodid. Hamingi kaal ja kaugus, koodi kaugus ja kiirus.
 
