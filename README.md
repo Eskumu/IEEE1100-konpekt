@@ -425,7 +425,9 @@ Tagamaks algsete andmete korrektset taastamist peab deskrämbler töötama sünk
 ### 27. Baitide järjekord edastamisel (endianness). MSB ja LSB, bittide järjekord edastamisel.
 
 big-endian (edastatakse esmalt kõige suureb bit), little-endian (edastatakse esmalt kõige väiksem bit).
+
 MSB - most significant bit
+
 LSB - least significant bit
 
 ### 28. Veakontroll, kontrollsumma ja kontrollkood CRC.  CRC arvutamine ja kontrollimine, genereeriv polünoom. 
