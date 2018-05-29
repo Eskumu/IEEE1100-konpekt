@@ -167,7 +167,7 @@ C/B - spektraalefektiivsus [bit/s/Hz]
 
 __ÜL 13, 14__
 
-- Koodi C all peetakse silmas ühest vastavust allika sümbolite a~i~ ja neid sümboleidkirjeldavate digitaalsete sümbolite (koodsõnade) c~i~ vahel.
+- Koodi C all peetakse silmas ühest vastavust allika sümbolite a<sub>i</sub> ja neid sümboleidkirjeldavate digitaalsete sümbolite (koodsõnade) c<sub>i</sub> vahel.
 
 - Koodsõna keskmine pikkus:
 
@@ -194,13 +194,13 @@ __ÜL 13, 14__
 
 - Kui signaali s(t) ribalaius on B hertsi, siis on see signaal täielikult määratud diskreetsete väljavõtetega ajavahemike 1/2B sekundi tagant.
 - Vajalik diskreetimissamm Δt ≤ 1/(2B)
-- Põhiriba signaali korral diskreetimissagedus f~s~ ≥ 2f~m~
+- Põhiriba signaali korral diskreetimissagedus f<sub>s</sub> ≥ 2f<sub>m</sub>
 
 #### Kvantimine
 
-- Signaali väärtus diskreetsetel ajahetkedel s(n · Δt) mõõdetakse mingi lõpliku täpsusega ±q/2 ja salvestatakse digitaalsel kujul bittide arvuga n~B~.
+- Signaali väärtus diskreetsetel ajahetkedel s(n · Δt) mõõdetakse mingi lõpliku täpsusega ±q/2 ja salvestatakse digitaalsel kujul bittide arvuga n<sub>B</sub>.
 
-- Kvantimissammu q suurus on määratud bittide arvuga n~B~ ja sisendpinge maksimaalse muutumisvahemikuga U~pp~(-U~m~...U~m~)
+- Kvantimissammu q suurus on määratud bittide arvuga n<sub>B</sub> ja sisendpinge maksimaalse muutumisvahemikuga U<sub>pp</sub> (-U<sub>m</sub> ...U<sub>m</sub> )
 
   
   $$
