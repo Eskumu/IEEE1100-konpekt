@@ -26,7 +26,7 @@ Informatsiooni mõõtühikud:
 
 ### 3. Shannon-Weaveri mudel, selle koostisosad ja nende funktsioonid
 
-![1527586247725](C:\Users\pro\Dropbox\Süsteemide arendus\Arvutivõrgud\eksamiKonspekt\1527586247725.png)
+![1527586247725](assets\1527586247725.png)
 
 ### 4. Signaali mõiste, ühe ja mitmemõõtmelised signaalid, signaalid ajas ja ruumis
 
@@ -37,6 +37,8 @@ Informatsiooni mõõtühikud:
 ### 5. Siinussignaal ja selle parameetrid
 
 __ÜL 3__
+
+
 $$
 s(t) = A · \sin(2\pi f t + \varphi)
 $$
@@ -81,7 +83,11 @@ Kahe võimsuse suhet mõõdetakse detsibellides:
 $$
 K[dB] = 10  · \log\frac{P_2}{P_1}
 $$
+
+
 Teisendusvalemid (Võimsusele):
+
+
 $$
 P[dBW] = 10  · \log\frac{P}{1W}
 $$
