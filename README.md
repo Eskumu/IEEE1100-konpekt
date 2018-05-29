@@ -130,6 +130,10 @@ $$
 
 
 
+
+
+
+
 ### 11. Shannoni valem ja Shannoni piir, spektraalefektiivsuse mõiste, Hartley seadus.
 
 #### Shannoni valem (Shannon-Hartley teoreem)
@@ -438,16 +442,14 @@ LSB - least significant bit
 
   - paaris paarsuskontroll  - paaris arv ühtesi
 
-  ```
-  A tahab saata:           1001
-  A arvutab paarsusbiti:   1^0^0^1 = 0
-  A lisab paarsusbiti:     10010
-  B võtab vastu:           10010
-  B arvutab paarsuse:      1^0^0^1^0 = 0
-  B teatab õnnestunud ülekandest, kuna paarsuskontroll osutus õigeks.
-  ```
-
-
+    ```
+    A tahab saata:           1001
+    A arvutab paarsusbiti:   1^0^0^1 = 0   
+    A lisab paarsusbiti:     10010
+    B võtab vastu:           10010
+    B arvutab paarsuse:      1^0^0^1^0 = 0
+    B teatab õnnestunud ülekandest, kuna paarsuskontroll osutus õigeks.
+    ```
 
   - paaritu paarsuskontroll - paaritu arv ühtesi
 
