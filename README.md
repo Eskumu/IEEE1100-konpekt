@@ -21,7 +21,13 @@ Informatsiooni mõõtühikud:
 
 ### 2. Shannoni entroopia
 
+__ÜL 13, 14__
 
+- informatsiooniallika poolt toodetava informatsiooni hulk
+  $$
+  H(A) = \displaystyle\sum_{j=1}^{N} p(a_j)I(a_j) = -\displaystyle\sum_{j=1}^{N} p(a_j)\log_2{p(a_j)}
+  $$
+  
 
 
 ### 3. Shannon-Weaveri mudel, selle koostisosad ja nende funktsioonid
@@ -61,9 +67,9 @@ TODO
 
 - Tähiseks on P või S
 
-- Signaali (pinge) efektiivväärtus: 
+- Signaali (pinge) efektiivväärtus: (Um on pinge amplituut) 
   $$
-  U = \sqrt{P}
+  U = \frac{U_m}{\sqrt2} = \frac{U_{pp}}{2\sqrt2} = \sqrt{P}
   $$
 
 - Oomi seadus:
@@ -116,13 +122,107 @@ $$
 
 ### 10. Signaali-ja süsteemi ribalaius.
 
+- Signaali spektri kõrgeima ja madalaima sageduse erinevus [Hz]
+  $$
+  B = f_{max} - f_{min}
+  $$
+
+
 ### 11. Shannoni valem ja Shannoni piir, spektraalefektiivsuse mõiste, Hartley seadus.
+
+#### Shannoni valem (Shannon-Hartley teoreem)
+
++ Sidekanali maksimaalne teoreetiline läbilaskevõime C [bit/s]
+
+$$
+C= B   · \log_2\left(1 + \frac{S}{N}\right) [bit/s]
+$$
+
+
+
+B - kanali ribalaius [Hz]
+S - signaali võimsus [W]
+N- müra võimsus [W]
+C/B - spektraalefektiivsus [bit/s/Hz]
+
+#### Hartley seadus
+
+- Teoreetiline edastuskiirus R kanalis ribalaiusega B, kui kasutada edastamisel M erinevat sümbolit on:
+
+  
+  $$
+  R = 2 B  · \log_2(M) [bitt/s]
+  $$
+  Kasutades Shannoni seadust saame:
+  $$
+  M = \sqrt{1 + \frac{S}{N}} 
+  $$
+  
+  $$
+  \frac{S}{N} = M^2 - 1
+  $$
+  
 
 ### 12. Koodi mõiste, koodi parameetrid.
 
+__ÜL 13, 14__
+
+- Koodi C all peetakse silmas ühest vastavust allika sümbolite a~i~ ja neid sümboleidkirjeldavate digitaalsete sümbolite (koodsõnade) c~i~ vahel.
+
+- Koodsõna keskmine pikkus:
+
+  
+  $$
+  L = \displaystyle\sum_{j=1}^{N} p(a_j)n(a_j) 
+  $$
+  
+
+- Koodsõna liiasus (keskmise pikkuse ja entroopia erinevus)
+
+  
+  $$
+  D = L - H
+  $$
+  
+
 ### 13. Analoog-digitaalmuundus. Diskreetimine ja kvantimine. Nyquisti kriteerium, aliased. Kvantimismüra võimsus, signaal-kvantimismüra suhe. Detsimeerimine.
 
+- Analoogsignaal on pidev argumendis ja väärtuses s(t)
+- analoogsignaali väärtused fikseeritakse mingil lõplikul hulgal ajahetkedel s(n   · Δt) - diskreetimine
+
+#### Nyquist-Shannon-Kotelnikovi teoreem
+
+- Kui signaali s(t) ribalaius on B hertsi, siis on see signaal täielikult määratud diskreetsete väljavõtetega ajavahemike 1/2B sekundi tagant.
+- Vajalik diskreetimissamm Δt ≤ 1/(2B)
+- Põhiriba signaali korral diskreetimissagedus f~s~ ≥ 2f~m~
+
+#### Kvantimine
+
+- Signaali väärtus diskreetsetel ajahetkedel s(n · Δt) mõõdetakse mingi lõpliku täpsusega ±q/2 ja salvestatakse digitaalsel kujul bittide arvuga n~B~.
+
+- Kvantimissammu q suurus on määratud bittide arvuga n~B~ ja sisendpinge maksimaalse muutumisvahemikuga U~pp~(-U~m~...U~m~)
+
+  
+  $$
+  q = \frac{U_{pp}}{2^{n_b} - 1} \approx \frac{U_{pp}}{2^{n_b}} = \frac{U_{m}}{2^{n_b - 1}}
+  $$
+  
+
+- Kvantimisega kaasneb pöördumatu informatsioonikadu, mida iseloomustab kvantimismüra võimsusega 
+  $$
+  N = \frac{q^2}{12}
+  $$
+  
+
+- Signaal-kvantimismüra suhe:
+  $$
+  SNR \approx 6  · n_B + 4,7 [dB]
+  $$
+  
+
 ### 14. G.711 koodek, A- ja μ seadused (kompressor ja ekspander).
+
+![1527592673523](assets/1527592673523.png)
 
 ### 15. Värvipildi (video) YUV kodeering. Värvivahesignaalide aladiskreetimine.
 
