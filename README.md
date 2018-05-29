@@ -128,6 +128,8 @@ $$
   $$
 
 
+
+
 ### 11. Shannoni valem ja Shannoni piir, spektraalefektiivsuse mõiste, Hartley seadus.
 
 #### Shannoni valem (Shannon-Hartley teoreem)
@@ -171,11 +173,10 @@ __ÜL 13, 14__
 
 - Koodsõna keskmine pikkus:
 
-  
-  $$
+
+$$
   L = \displaystyle\sum_{j=1}^{N} p(a_j)n(a_j) 
-  $$
-  
+$$
 
 - Koodsõna liiasus (keskmise pikkuse ja entroopia erinevus)
 
@@ -202,17 +203,15 @@ __ÜL 13, 14__
 
 - Kvantimissammu q suurus on määratud bittide arvuga n<sub>B</sub> ja sisendpinge maksimaalse muutumisvahemikuga U<sub>pp</sub> (-U<sub>m</sub> ...U<sub>m</sub> )
 
-  
-  $$
+
+$$
   q = \frac{U_{pp}}{2^{n_b} - 1} \approx \frac{U_{pp}}{2^{n_b}} = \frac{U_{m}}{2^{n_b - 1}}
-  $$
-  
+$$
 
 - Kvantimisega kaasneb pöördumatu informatsioonikadu, mida iseloomustab kvantimismüra võimsusega 
   $$
   N = \frac{q^2}{12}
   $$
-  
 
 - Signaal-kvantimismüra suhe:
   $$
@@ -226,19 +225,111 @@ __ÜL 13, 14__
 
 ### 15. Värvipildi (video) YUV kodeering. Värvivahesignaalide aladiskreetimine.
 
+![1527594073115](assets/1527594073115.png)
+
+![1527594054974](assets/1527594054974.png)
+
+![1527594038358](assets/1527594038358.png)
+
 ### 16. Vaskkaabel ja selle lainetakistus, terminaator.
+
+TODO
 
 ### 17. Sumbumus ja läbikoste kaablites.
 
+TODO
+
 ### 18. Fiiberoptiline kaabel, ehitus ja tööpõhimõte. Optiliste fiibrite tüübid ja nende kasutamine. Dispersioon fiiberoptilistes kaablites.
+
+TODO
 
 ### 19.Liinikoodi mõiste, liinikoodide parameetrid.
 
+__ÜL 12__
+
+![1527594243863](assets/1527594243863.png)
+
+Mõõdeatakse näiteks keskmist pinget.
+
 ### 20. Antenn ja selle parameetrid, antenni võimendus G ja ekvivalentne isotroopne kiirgusvõimsus EIRP.
+
+- Antenn muundab elektrivoolu energia elektromagnetkiirguse energiaks ja vastupidi.
+
+- Antenni parameetrid:
+
+  - Antenni võimendus G[dBi]
+    $$
+    G = 10 · \log_{10}\left(\frac{P_{max}}{P_{Iso}}\right)
+    $$
+
+  - Impedants Z<sub>a</sub>
+
+  - Töösagedused _f_<sub>min</sub> ... _f_<sub>max</sub> (ribalaius B)
+
+  - Suunadiagramm D(θ,φ):
+
+  ![1527594759059](assets/1527594759059.png)
+
+
 
 ### 21. Friisi valem, vaba ruumi kadu.
 
-### 22. Lingi bilanss.
+![1527594900120](assets/1527594900120.png)
+
+#### Vaba ruumi kadu FSL
+
+$$
+FSL = \left(\frac{4\pi d}{\lambda}\right)^2
+$$
+
+kus 
+
+- *d [m]* on saatja ja vastuvõtja vaheline kaugus
+- *λ [m]* on lainepikkus, mis avaldub valemiga *λ = c / f*, kus *c* on valguse kiirus (*3∙10<sup>8</sup>  m/s*) ja *f [Hz]* on kasutatav sagedus.
+
+Logaritmilisetes ühikuses:
+$$
+FSL = 20 · \log_{10}d + 20 · \log_{10}f + a
+$$
+kus konstandi a väärtus sõltub kasutatavatest ühikutest
+
+- kui *f [Hz]* ja *d [m]*, siis *a = −147,55* 
+- kui *f [GHz]* ja *d [km]* siis *a = 92,45* 
+- kui *f [MHz]* ja *d [km]*, siis *a = 32,45* 
+- kui *f [MHz]* ja *d [m]*, siis *a = −27,55* 
+- kui *f [kHz]* ja *d [m]*, siis *a = −87,55* 
+
+#### Friisi valem (lineaarsed ühikud)
+
+$$
+P_v = \frac{P_s  · G_s  · G_v}{FSL}
+$$
+
+
+
+kus
+
+- *Pv* on vastuvõtja sisendvõimsus ühikuteks [mW] või [W]
+- *Gs* on saatja antenni võimendus [kordades]
+- *Gv* on vastuvõtja antenni võimendus [kordades]
+- *FSL* on vaba ruumi kadu (*free space loss*) [kordades] 
+
+### 22. Lingi bilanss. (logaritmilised ühikud)
+
+
+$$
+P_v = P_s + G_s + G_v - FSL - L
+$$
+
+
+kus
+
+- Vastuvõtja võimsus *Pv [dBm]*
+- saatja võimsus *Ps [dBm]*
+- saatja antenni võimendus *Gs [dBi]* 
+- vastuvõtja antenni võimendus *Gv[dBi]*
+- vaba ruumi kadu *FSL [dB]*.
+- Muud kaod *L* on ühikutes *dB*. 
 
 ### 23. Fresneli tsoonid ja nende mõju, Fresneli tsooni laius.
 
