@@ -134,6 +134,8 @@ $$
 
 
 
+
+
 ### 11. Shannoni valem ja Shannoni piir, spektraalefektiivsuse mõiste, Hartley seadus.
 
 #### Shannoni valem (Shannon-Hartley teoreem)
@@ -553,7 +555,41 @@ $$
 
 ### 35. Vaheldamine (Interleaving), põhjused ja teostamine –plokkvaheldi (Block Interleaver).
 
+- Vigu parandavad koodid suudavad parandada suhteliselt suurt hulka vigu, kui need vead on andmetes ühtlaselt jaotunud.
+- Praktikas kipuvad vead esinema gruppidena (_error burst_)
+- Vaheldi (_Interleaver_) on seade, mis vähendab veapursete mõju ja parandab vigu parandavate koodide tõhusust. 
+- Vaheldi muudab enne andmete saatmist andmete järjekorda selliselt, et järjestiku eksisteerivad andmed ei paikne edastamisel lähestikku.
 
+#### Plokkvahendi (_block interleaver_)
+
+- Olgu edastatavaks sõnumiks järgnev tekst:
+
+  - SeeOnVaheldamiseNäide
+
+- Peale veapurset on andmetest kadunud neli järjestikust sümbolit:
+
+  - SeeO____eldamiseNäide
+
+- __Vaheldamist__ kasutades, edastatavad andmed pannakse ridahaaval n×m maatriksisse.
+
+  ​	 ![1527610139142](assets/1527610139142.png)
+
+- Andmed edastatakse sideliinis veergude kaupa.
+
+  - ShseeeelNOdänaiVmdaie 
+
+- Nii ei paikne kõrvutised sümbolid edastamisel koos. Samas tekib edastamisel viide, mis on tingitud tabeli kirjutamisest enne edastamise algust ja lugemisest peale vastuvõtu lõppu.
+
+- Kui nüüd kustub edastatud jadas veapurske tõttu neli järjestikust sümbolit on tulemus järgmine:
+
+  - ShseNOdänaiVmdaie
+
+- Kohalejõudev maatriks:
+   ![1527610294989](assets/1527610294989.png)
+
+- Peale sümbolite õige järjekorra taastamist on veapurse jaotunud ühtlasemalt sõnumi peale laiali:
+
+  - Se_OnVah__daamis_Näide
 
 ### 36. Signaalide võrdlemine, rist-ja autokorrelatsioon. Koodtihendus CDMA.
 
