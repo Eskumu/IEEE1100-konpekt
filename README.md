@@ -1,7 +1,10 @@
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 # IEEE1100 Arvutivõrgud konspekt
 
 ### 1. Informatsiooni mõiste ja mõõtühikud
+
+__ÜL 1__
 
 informatsioon - teadmatuse vähenemise määr
 sõnumis m sisalduva informatsiooni hulk:
@@ -18,25 +21,92 @@ Informatsiooni mõõtühikud:
 
 ### 2. Shannoni entroopia
 
-$$
-
-$$
 
 
 
 ### 3. Shannon-Weaveri mudel, selle koostisosad ja nende funktsioonid
 
+![1527586247725](C:\Users\pro\Dropbox\Süsteemide arendus\Arvutivõrgud\eksamiKonspekt\1527586247725.png)
+
 ### 4. Signaali mõiste, ühe ja mitmemõõtmelised signaalid, signaalid ajas ja ruumis
+
+- ajas või ruumis muutuv füüsikaline suurus
+- s(t), s(x,y,z), s(x,y,z,t)
+- signaal kui edastab informatsiooni mingi nähtuse käitumise või parameetrite kohta
 
 ### 5. Siinussignaal ja selle parameetrid
 
+__ÜL 3__
+$$
+s(t) = A · \sin(2\pi f t + \varphi)
+$$
+
+- A – Amplituud ehk max kõrvalekalle keskmisest (signaal -A kuni A)
+- f – sagedus ehk ajaühikus toimuvate täisvõngete arv [Hz]
+- ω=2πf – ringsagedus, ajaühikus kaetava faasinurga suurus [rad/s] 
+- T – periood ehk täisvõnke kestus. (T = 1/f)
+- φ – Algfaas ehk signaali alghetk.
+
 ### 6. Signaali spekter, siinussignaal, nelinurkimpulssi ja impulssjada spektrid
+
+TODO
 
 ### 7. Signaali võimsus, selle seos pinge ja impedantsiga
 
+- Hetkvõimsus: p(t) = u(t)  · i(t)
+
+- Mõõtühik on W (vatt)
+
+- Tähiseks on P või S
+
+- Signaali (pinge) efektiivväärtus: 
+  $$
+  U = \sqrt{P}
+  $$
+
+- Oomi seadus:
+  $$
+  i(t) = \frac{u(t)}{Z}
+  $$
+
+- Järelikult: 
+  $$
+  p(t) = \frac{u^2(t)}{Z} = i^2(t)  · Z
+  $$
+  
+
 ### 8. Logaritmilised mõõtühikud, detsibell(dB, dBm, dBV, ...)
 
+Kahe võimsuse suhet mõõdetakse detsibellides:
+$$
+K[dB] = 10  · \log\frac{P_2}{P_1}
+$$
+Teisendusvalemid (Võimsusele):
+$$
+P[dBW] = 10  · \log\frac{P}{1W}
+$$
+
+$$
+P[dBm] = 10  · \log\frac{P}{1mW}
+$$
+
+$$
+P[mW] = 10^{\frac{P[dBm]}{10}}
+$$
+
+TODO 20 kordne?
+
 ### 9. Müra ja selle võimsus. Signaal-müra suhe.
+
+$$
+SNR[db] = S[dBm] - N[dBm]
+$$
+
+$$
+SNR[kordades] = \frac{S[w]}{N[w]}
+$$
+
+
 
 ### 10. Signaali-ja süsteemi ribalaius.
 
