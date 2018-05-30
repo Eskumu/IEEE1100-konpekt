@@ -85,6 +85,8 @@ TODO
 
 ### 8. Logaritmilised mõõtühikud, detsibell(dB, dBm, dBV, ...)
 
+__ÜL 4__
+
 Kahe võimsuse suhet mõõdetakse detsibellides:
 $$
 K[dB] = 10  · \log\frac{P_2}{P_1}
@@ -208,6 +210,8 @@ $$
 
 ### 13. Analoog-digitaalmuundus. Diskreetimine ja kvantimine. Nyquisti kriteerium, aliased. Kvantimismüra võimsus, signaal-kvantimismüra suhe. Detsimeerimine.
 
+__Ül 15, 16__
+
 - Analoogsignaal on pidev argumendis ja väärtuses s(t)
 - analoogsignaali väärtused fikseeritakse mingil lõplikul hulgal ajahetkedel s(n   · Δt) - diskreetimine
 
@@ -253,13 +257,19 @@ $$
 
 ### 16. Vaskkaabel ja selle lainetakistus, terminaator.
 
+__ÜL 5, 6__
+
 TODO
 
 ### 17. Sumbumus ja läbikoste kaablites.
 
+__ÜL 7__
+
 TODO
 
 ### 18. Fiiberoptiline kaabel, ehitus ja tööpõhimõte. Optiliste fiibrite tüübid ja nende kasutamine. Dispersioon fiiberoptilistes kaablites.
+
+__ÜL 8__
 
 TODO
 
@@ -294,10 +304,13 @@ Mõõdetakse näiteks keskmist pinget.
 
 ### 21. Friisi valem, vaba ruumi kadu.
 
+__ÜL 9__
+
 ![1527594900120](assets/1527594900120.png)
 
 #### Vaba ruumi kadu FSL
 
+__ÜL 23__
 $$
 FSL = \left(\frac{4\pi d}{\lambda}\right)^2
 $$
@@ -353,6 +366,8 @@ kus
 
 ### 23. Fresneli tsoonid ja nende mõju, Fresneli tsooni laius.
 
+__ÜL 10__
+
 - Esimese Fresnelli tsooni raadius r<sub>1</sub> on leitav valemiga:
 
   
@@ -369,6 +384,8 @@ kus
 - Soovitatav on vähemalt 80% tsoonist.
 
 ### 24. Modulatsiooniviisid, digitaalne modulatsioon: ASK, FSK, PSK.  Moduleeritud signaali ajaline kuju ja spekter. Sagedustihendus FDM. Konstellatsioonidiagramm.
+
+__ÜL 12__
 
 ASK - amplituudmodulatsioon (muudetakse amplituudi)
 FSK - sagedusmodulatsioon (muudetakse signaali sagedust)
@@ -480,6 +497,8 @@ LSB - least significant bit
 
 #### CRC (kontrollkood)
 
+__ÜL 17__
+
 
 CRC kontrollkoodi genereeriv polünoomi esimene sümbol on __alati 1__ (isegi kui ei ole mainitud)
 
@@ -492,6 +511,8 @@ Näites on kasutusel
 ![1527600631940](assets/1527600631940.png)
 
 ### 29. Kaadri alguse ja lõpu märkimine. Biti ja baidi täitmine, kontrolloktett.
+
+__ÜL 18, 19__
 
 - Kaadri algust ja lõppu tähistatakse spetsiifilise väljaga (flag): 0x7E
 - Kui kaadri sees oleks sama bitijärjestus loetaks see kaadri lõpuks
@@ -506,6 +527,8 @@ TODO
 ### 31. Vookontroll, Stop-and Wait protokoll.
 
 #### Stop-and-wait
+
+__ÜL 20__
 
 ![1527601457226](assets/1527601457226.png)
 
@@ -550,8 +573,9 @@ $$
 R = 1 - \frac{r}{2^r - 1}
 $$
 
-
 ### 34. Hammingi kood, Hamming (7,4). Genereeriv maatriks, sündroom.
+
+__ÜL 21, 22__
 
 ![1527602871085](assets/1527602871085.png)
 
@@ -610,6 +634,8 @@ $$
 
 ### 36. Signaalide võrdlemine, rist-ja autokorrelatsioon. Koodtihendus CDMA.
 
+__ÜL 25__
+
 TODO: Loeng 14. on mingid slaidid
 
 ### 37. Sagedushüplemine, sageduse otsene hajutamine. Teostamine ja kasutamine.
@@ -664,3 +690,4 @@ GSM mobiilpositsioneerimine põhineb mitme erineva tugijaama kauguse mõõtmises
 
 ### 45. Pinge ja vool elektriahelas, nende otsene ja kaudne mõõtmine. Oomi seadus.
 
+__ÜL 5, 6__
