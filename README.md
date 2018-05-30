@@ -91,7 +91,7 @@ K[dB] = 10  · \log\frac{P_2}{P_1}
 $$
 
 
-Teisendusvalemid (Võimsusele):
+Teisendusvalemid (võimsusele):
 
 
 $$
@@ -106,7 +106,20 @@ $$
 P[mW] = 10^{\frac{P[dBm]}{10}}
 $$
 
-TODO 20 kordne?
+#### Pinge mõõtmine detsibellskaalas
+
+Teisendusvalemid (pingele):
+
+
+$$
+U[dBV] = 20  · \log\frac{P}{1V}
+$$
+
+$$
+U[V] = 10^{\frac{P[dBV]}{20}}
+$$
+
+
 
 ### 9. Müra ja selle võimsus. Signaal-müra suhe.
 
@@ -126,6 +139,7 @@ $$
   $$
   B = f_{max} - f_{min}
   $$
+
 
 
 
@@ -596,38 +610,57 @@ $$
 
 ### 36. Signaalide võrdlemine, rist-ja autokorrelatsioon. Koodtihendus CDMA.
 
-
+TODO: Loeng 14. on mingid slaidid
 
 ### 37. Sagedushüplemine, sageduse otsene hajutamine. Teostamine ja kasutamine.
 
-
+TODO: Loeng 14. on mingid slaidid
 
 ### 38. Pseudojuhuslikjada ja selle genereerimine, M-jada.
 
+- Binaarne statistiliselt sarnane juhuslikule jadale (mürataoline)
 
+- Tegelikult deterministlik, jada on peroodiline
+
+- M-jada: maksimaalne pikkusega N = 2<sup>n</sup> - 1
+
+- Tekitatakse tagasisidestatud nihkeregistriga (pikkus n)
+
+  Näide M-jada genereerivast süsteemist:
+
+  
+
+  ![1527665814721](assets/1527665814721.png)
 
 ### 39. Ortogonaalne sagedustihendus OFDM. Tööpõhimõte ja kasutamine.
 
-
+TODO
 
 ### 40. MIMO mõiste ja kasutamine.
 
-
+- Multiple Input Multiple Output
+- Andmeedastuse kiiruse või töökindluse suurendamiseks
+- Mitme antenni kasutamine saatjas ja vastuvõtjas
 
 ### 41. Sageduste taaskasutus mobiilsidevõrgus.
 
+Sageduste taaskasutamiseks on tugijaamad asetataud kärgvõrku, kus samade sagedustega tugijaamad on üksteisest alati sama kaugel ning ei sega teineteist.
 
+![1527666417322](assets/1527666417322.png)
 
 ### 42. Ressursijaotus mobiilsidevõrkudes: FDMA, TDMA.
 
-
+TODO 15.loengu slaidid
 
 ### 43. Mobiilsidevõrgu ehitus ja peamised sõlmed.
 
-
+TODO 15. loengu slaidid
 
 ### 44. GSM mobiilpositsioneerimine, TA parameeter.
 
+GSM mobiilpositsioneerimine põhineb mitme erineva tugijaama kauguse mõõtmisest mobiilil. Kaugus saadakse teada kasutades TA (_Timing Advance_) parameetrit, ehk leitakse kui suur on signaali viide.
 
+![1527666666055](assets/1527666666055.png)
 
 ### 45. Pinge ja vool elektriahelas, nende otsene ja kaudne mõõtmine. Oomi seadus.
+
