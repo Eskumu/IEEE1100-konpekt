@@ -53,7 +53,7 @@ $$
 - f – sagedus ehk ajaühikus toimuvate täisvõngete arv [Hz]
 - ω=2πf – ringsagedus, ajaühikus kaetava faasinurga suurus [rad/s] 
 - T – periood ehk täisvõnke kestus. (T = 1/f)
-- φ – Algfaas ehk signaali alghetk.
+- φ – Algfaas ehk signaali alghetk. (positiivne faas liigutab signaali vasakule, negatiivne signaal paremale)
 
 ### 6. Signaali spekter, siinussignaal, nelinurkimpulssi ja impulssjada spektrid
 
