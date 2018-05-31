@@ -2,6 +2,8 @@
 
 # IEEE1100 Arvutivõrgud konspekt
 
+> __ÜL x__ tähistab küsimusele vastavat ülesannet [näidisülesannete failis](https://github.com/Eskumu/IEEE1100-konspekt/raw/master/IEE1100%20Eksami%20n%C3%A4idis%C3%BClessanded.pdf)
+
 ### 1. Informatsiooni mõiste ja mõõtühikud
 
 __ÜL 1__
@@ -152,6 +154,7 @@ $$
 
 
 
+
 ### 11. Shannoni valem ja Shannoni piir, spektraalefektiivsuse mõiste, Hartley seadus.
 
 #### Shannoni valem (Shannon-Hartley teoreem)
@@ -210,7 +213,7 @@ $$
 
 ### 13. Analoog-digitaalmuundus. Diskreetimine ja kvantimine. Nyquisti kriteerium, aliased. Kvantimismüra võimsus, signaal-kvantimismüra suhe. Detsimeerimine.
 
-__Ül 15, 16__
+__ÜL 15, 16__
 
 - Analoogsignaal on pidev argumendis ja väärtuses s(t)
 - analoogsignaali väärtused fikseeritakse mingil lõplikul hulgal ajahetkedel s(n   · Δt) - diskreetimine
@@ -670,6 +673,8 @@ TODO
 
 ### 41. Sageduste taaskasutus mobiilsidevõrgus.
 
+__ÜL 27, 31, 32__
+
 Sageduste taaskasutamiseks on tugijaamad asetataud kärgvõrku, kus samade sagedustega tugijaamad on üksteisest alati sama kaugel ning ei sega teineteist.
 
 ![1527666417322](assets/1527666417322.png)
@@ -684,7 +689,11 @@ TODO 15. loengu slaidid
 
 ### 44. GSM mobiilpositsioneerimine, TA parameeter.
 
+__ÜL 29__
+
 GSM mobiilpositsioneerimine põhineb mitme erineva tugijaama kauguse mõõtmisest mobiilil. Kaugus saadakse teada kasutades TA (_Timing Advance_) parameetrit, ehk leitakse kui suur on signaali viide.
+
+TA number vastab 550 m pikkusele lõigule, nt TA = 2 puhul on kaugus mastist 1100 m. 
 
 ![1527666666055](assets/1527666666055.png)
 
