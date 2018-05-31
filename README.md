@@ -314,6 +314,8 @@ __ÜL 9__
 #### Vaba ruumi kadu FSL
 
 __ÜL 23__
+
+
 $$
 FSL = \left(\frac{4\pi d}{\lambda}\right)^2
 $$
